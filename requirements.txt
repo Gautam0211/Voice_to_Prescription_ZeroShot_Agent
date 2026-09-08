@@ -1,0 +1,8 @@
+streamlit
+langgraph
+groq
+pydantic
+rapidfuzz
+jellyfish
+python-dotenv
+xhtml2pdf

@@ -1,0 +1,38 @@
+# =========================
+# Virtual environment
+# =========================
+.venv/
+venv/
+env/
+
+# Ignore python cache files
+**/__pycache__/
+*.pyc
+
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# OS junk
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Data / logs (optional — remove if you want to track these)
+# =========================
+*.log
