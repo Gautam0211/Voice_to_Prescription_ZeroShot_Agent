@@ -32,6 +32,8 @@ fields. Do NOT correct, normalize, or guess at "proper" drug spellings — copy 
 name exactly as it sounds in the transcript. Correction happens in a later, separate step.
 If a field wasn't mentioned, use null.
 
+Generic category words like "cough syrup", "tablet", "syrup", or "medicine" must NEVER be extracted as their own separate medicine entry. If such a word is mentioned alongside a specific drug/brand name (e.g. "Ascoril cough syrup"), attach it only as part of that single entry's raw_text/drug_name — do not create an additional entry for the category word. If no drug/brand is mentioned/named with word "cough syrup", only and only then add it as an individual log of "cough syrup".
+
 Example:
 Input: "azithromycin 500 mg once daily for 3 days"
 Output: {"medicines": [{"raw_text": "azithromycin", "drug_name": "azithromycin", \
